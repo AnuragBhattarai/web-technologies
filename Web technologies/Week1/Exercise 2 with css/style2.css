@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+.table{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 7;
+
+    background-image: linear-gradient(rgb(0, 0, 0),transparent),url(night.jpg);
+
+}
+table{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgb(92, 0, 0);
+    background: rgb(233, 228, 228);
+    text-align: center;
+}
+th,td{
+    padding: 12px 15px;
+}
+th{
+    background: rgb(45, 12, 192);
+    color: rgb(0, 4, 7);
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+td{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+tr:nth-child(even){
+    background-color: cadetblue;
+}
+h1{
+    font-size: 190px;
+    line-height: 210px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 3px rgb(180, 5, 5) ;
+    background: url(dottre-transformed.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{100%{
+background-position: 2000px 0;}}
+.text-box h3{
+    font-size: 40px;
+    font-weight: 550;
