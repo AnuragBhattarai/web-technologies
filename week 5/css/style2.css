@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Unbounded:wght@200;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #023612;
+  }
+  .main{
+    display: flex;
+    background-color: #023612;
+    padding: 1.1%;
+  color: #ffffff;
+   
+  }
+  .text1{
+    
+  background-color:#023612;
+  padding: 1.1%;
+  color: #110c0c;
+  display: flex;
+  }
+  h1{
+    font-size: 90px;
+    line-height: 1.1;
+  margin-bottom: 50px;
+  font-family: "Unbounded", cursive;
+  margin: auto;
+  width: 50%;
+  color: #ffffff;
+ 
+  
+  }
+  h2{
+  font-size: 50px;
+  line-height: 1;
+margin-bottom: 2px;
+width: 50%;
+font-family: "Unbounded", cursive;
+}
+img {
+ align-items: left;
+margin-left: 30%;
+height: 500px;
+width: 900px;
+
+  }
+ 
+
+  
+
+
