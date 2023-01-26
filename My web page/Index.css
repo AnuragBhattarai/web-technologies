@@ -20,6 +20,7 @@ header{
    z-index: 10;
 }
 header .logo{
+    pointer-events: none;
     font-size: 50px;
     font-weight: 20px;
     text-decoration: none;
@@ -28,6 +29,7 @@ header .logo{
     font-family: sans-serif;
     font-weight: bolder;
     letter-spacing: 15px;
+    display: flex;
 }
 header ul {
   display: flex;
@@ -53,7 +55,7 @@ header ul li a:hover{
     background-color: aliceblue;
 }
 
-section{
+#sec1{
     overflow-y: hidden;
     overflow-x: hidden;
     position: relative;
@@ -64,7 +66,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-section::before{
+#sec1::before{
   content: '';
   position: absolute;
   bottom: 0;
@@ -73,7 +75,7 @@ section::before{
   background: linear-gradient(to top,rgb(4, 5, 41),transparent);
   z-index: 1000;
 }
-section img{
+#sec1 img{
     
     position: absolute;
     top: 0;
@@ -82,22 +84,22 @@ section img{
     height: 100%;
     pointer-events: none;
 }
-section img#earth{
+#sec1 img#earth{
     
     padding-top: 60px;
     padding-left: 70px;
     width: 85%;
     z-index: 6;
 }
-section img#stars{
+#sec1 img#stars{
     z-index: 5;
     
 }
-section img#astro{
+#sec1 img#astro{
     z-index: 7;
 }
 #intro{
-    
+    pointer-events: none;
     position: absolute;
     color: wheat;
     z-index: 5;
@@ -122,10 +124,16 @@ section img#astro{
     transform:translateY(10px);
     
 }
+#button:hover{
+    background-color: black;
+    color: aliceblue;
+    transition: 0.4s;
+}
 .maintxt{
     position: relative;
     width: 100%;
     height: 100%;
+    
     background-image:linear-gradient(rgb(3, 4, 37),transparent),url(805180.jpg);
 }
 
@@ -133,7 +141,9 @@ section img#astro{
     width: 100%;
     border: 80%;
     color: white;
-    padding: 140px 220px;
+    padding-right: 50em;
+    padding-top: 70px;
+    padding-left: 50px;
     
     
 }
@@ -142,11 +152,13 @@ section img#astro{
     font-size: 15px;
     padding: 50px;
     border-radius: 60px;
+    
 }
 .maintxt ul h2 p{
     
     font-size: 90px;
     text-align: center;
+    
 }
 footer{
     display: flex;
@@ -156,5 +168,57 @@ footer{
 }
 
 
+.maintxt ul h1{
+    height: 100%;
+    width: 20em;
+    background-color: aliceblue;  
+}
+/* 2ndpage start */
+#sec2{
+    transition: .5S;
+    min-height: 104vh;
+    
+    background-color: rgb(2, 11, 37);
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.sd1{
+    color: aliceblue;
+    min-width: 20vh;
+    background-color: black;
+    padding: 30px;
+    word-wrap: break-word;
+    border-radius: 20px;
+    overflow-x: hidden;
 
+}
+.sd1 .heads1{
+    display: flex;
+    justify-content: space-between;
+}
 
+.sd1 img{
+    width: 50px;
+    height: 50px;
+}
+.sd1 p{
+    padding: 40px;
+}
+.sd2{
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    background-color: rgb(255, 255, 252);
+    margin-left: 20vh;
+    word-wrap: break-word;
+}
+.sd2 .slider .slide{
+    height: 20px;
+    
+}
+.sd2 .slider .slide-first{
+    height: 20px;
+    
+}
+#body2{}
